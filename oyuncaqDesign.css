@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#navigation {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(195, 235, 221);
+}
+
+.pageNav div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageNav div a {
+  color: red;
+  font-size: 20px;
+}
+
+.pageNav div a:hover {
+  color: rgb(3, 104, 11);
+  cursor: pointer;
+}
+#navigation .naviqatioanBar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+#navigation .naviqatioanBar ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#navigation .naviqatioanBar ul li a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #navigation {
+    height: 120px;
+    flex-direction: column;
+  }
+  #navigation .naviqatioanBar ul li a {
+    font-size: 16px;
+  }
+  .pageNav {
+    display: flex;
+    gap: 20px;
+  }
+  .pageNav div a {
+    color: red;
+    font-size: 16px;
+  }
+}
+
+.oyQiyPdiv {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.oyQiyPdiv p {
+  font-size: 24px;
+  color: aqua;
+}
+@media only screen and (max-width: 600px) {
+  .oyQiyPdiv {
+    height: 70px;
+  }
+  .oyQiyPdiv p {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}
+
+.formAminDiv {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formFirstDiv h3 {
+  font-size: 24px;
+  border: double black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.formSecondDiv form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formSecondDiv form .inputLabelDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  height: 30px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.formSecondDiv form .inputLabelDiv input {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+}
+
+.formSecondDiv form .inputLabelDiv label {
+  margin-left: 10px;
+}
+
+#gonderBtn {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 30px;
+  border: double red;
+}
+
+#gonderBtn:hover {
+  background-color: green;
+  border: none;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .formSecondDiv form .inputLabelDiv {
+    width: auto;
+  }
+
+  .formFirstDiv h3 {
+    font-size: 18px;
+  }
+}
+
+#contactUsSection .elaqeDiv {
+  margin-left: 100px;
+  color: blue;
+}
+#contactUsSection {
+  padding-top: 50px;
+}
+#contactUsSection .iconsMainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 150px;
+}
+#contactUsSection .iconsMainDiv .iconParentDiv {
+  width: 50px;
+  height: 50px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#contactUsSection .iconsMainDiv .iconParentDiv a {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+#ontactUsSection .iconsMainDiv .iconParentDiv a .fa-brands {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #contactUsSection .elaqeDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  #contactUsSection .iconsMainDiv {
+    display: flex;
+    gap: 15px;
+  }
+
+  #contactUsSection .iconsMainDiv .iconParentDiv {
+    width: 30px;
+    height: 30px;
+  }
+  #contactUsSection .iconsMainDiv .iconParentDiv a {
+    font-size: 16px;
+  }
+}
